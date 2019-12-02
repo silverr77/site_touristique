@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link th:href="@{css/card.css}" type="text/css" rel="stylesheet" />
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<!-- Bootstrap Core CSS -->
+<link th:href="@{css/bootstrap.min.css}" rel="stylesheet" />
+
+<!-- CCS for the effects-->
+<link th:href="@{css/effects.min.css}" rel="stylesheet" />
+
+<!-- Font Icons -->
+<link rel="stylesheet" th:href="@{css/font-awesome.min.css}" />
+
+<!-- Custom Fonts -->
+<link rel="stylesheet" th:href="@{fonts/stylesheet.css}" />
+<style>
+/* Make the image fully responsive */
+.carousel-inner img {
+	width: 100%;
+	height: 400px;
+}
+
+/* Set your background color */
+.bg-custom {
+	background-color: #333
+}
+/* Transition effect */
+.navbar {
+	-webkit-transition: all .3s ease 0s;
+	transition: all .3s ease 0s;
+}
+
+.checked {
+	color: orange;
+}
+
+#cont1 {
+	background: rgba(0, 0, 0, 0.2);
+	height: 100px;
+	width: 100%;
+}
+
+#cont {
+	background: #f4f4f4;
+	transform: skewY(1.5deg);
+	/* height: 200px; */
+	position: absolute;
+	/* top: 171px; */
+	bottom: 0px;
+	height: 250px;
+	top: 0px;
+	width: 100%;
+	box-shadow: 0 4px 20px -14px;
+	padding: 15px;
+}
+</style>
+</head>
+<body onscroll="checkScroll()">
+	​
+	<div>
+
+		<nav id="test"
+			class="navbar navbar-expand-sm bg-dark  navbar-dark fixed-top">
+			<!-- Brand -->
+			<a class="navbar-brand" href="#">Logo</a>
+
+			<!-- Links -->
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+
+				<!-- Dropdown -->
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" id="navbardrop"
+					data-toggle="dropdown"> Dropdown link </a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Link 1</a> <a
+							class="dropdown-item" href="#">Link 2</a> <a
+							class="dropdown-item" href="#">Link 3</a>
+					</div></li>
+			</ul>
+		</nav>
+
+
+			<div id="demo" class="carousel slide" data-ride="carousel">
+				​
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+					<li data-target="#demo" data-slide-to="0" class="active"></li>
+					<li data-target="#demo" data-slide-to="1"></li>
+					<li data-target="#demo" data-slide-to="2"></li>
+				</ul>
+	
+				<!-- The slideshow -->
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img
+							src="https://www.voyageway.com/wp-content/uploads/2019/03/visiter-marrakech-740x432.jpg"
+							alt="Los Angeles" width="1100" height="500">
+					</div>
+					<div class="carousel-item">
+						<img
+							src="https://www.lesjardinsdelamedina.com/blog/wp-content/uploads/2018/04/menara.jpg"
+							alt="Chicago" width="1100" height="500">
+					</div>
+					<div class="carousel-item">
+						<img
+							src="https://www.kech-excursions.com/wp-content/uploads/2017/04/Excursion-Asni-Ouirgane-08.jpg"
+							alt="New York" width="1100" height="500">
+					</div>
+				</div>
+	
+				<!-- Left and right controls -->
+				<a class="carousel-control-prev" href="#demo" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a> <a class="carousel-control-next" href="#demo" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+			</div>
+
+	</div>
+
+	<div class="container mt-4" style="position: relative; height: 250px;"
+		id="khalid">
+		<div id="cont1"></div>
+		<div id="cont">
+			<div class="row">
+				<div class="col-md-7">
+					<h2>Bienvenue sur le site de la Région Marrakech</h2>
+					La région de Marrakech-Safi se situe au centre ouest du Royaume.
+					Elle s’étend des bordures de l’Océan Atlantique avec Essaouira
+					jusqu’au sud avec le Haut Atlas, la plus haute barrière du Nord de
+					l’Afrique, aux portes du désert. Ville impériale, capitale du sud
+					marocain et perle touristique du Royaume, Marrakech au centre de la
+					région est une des principales villes du Maroc avec plus de 1,5
+					millions d’habitants. A partir de Marrakech, il est aisé de
+					réaliser quelques escapades qui vous donneront un tout autre aperçu
+					du Maroc. Que se soit vers les côtes Atlantiques ou vers la
+					montagne, vous serez surpris par la diversité des paysages
+					traversés, tantôt arides, tantôt luxuriants et par la richesse des
+					possibilités d’activités.
+				</div>
+				<div class="col-md-4">
+					<img
+						src="http://region.visitmarrakech.ma/wp-content/uploads/2018/02/region-marrakech.png"
+						height="220px" width="90%">
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="container mt-2">
+		<div class="row">
+
+			<div class="col-md-6 mt-4" th:each="s:${sites}">
+				<div class="hover ehover1v2">
+					<img style="height: 260px; width: 100%;" class="img-responsive"
+						th:src="@{'/uploadingDir/' + ${s.pictures.get(0).emplacement}}"
+						alt="" />
+					<div style="position: absolute; top: 10px; right: 10px;">
+						<span style="font-size: 20px;"
+							th:classappend="${s.ratting>=1}? checked : '' "
+							class="fa fa-star"></span> <span class="fa fa-star"
+							th:classappend="${s.ratting>=2}? checked : '' "
+							style="font-size: 20px;"></span> <span class="fa fa-star"
+							th:classappend="${s.ratting>=3}? checked : '' "
+							style="font-size: 20px;"></span> <span class="fa fa-star"
+							th:classappend="${s.ratting>=4}? checked : '' "
+							style="font-size: 20px;"></span> <span class="fa fa-star"
+							th:classappend="${s.ratting>=5}? checked : '' "
+							style="font-size: 20px;"></span>
+					</div>
+					<div class="overlay">
+						<h2 th:text="${s.title}"></h2>
+						<button class="info" th:onclick="'window.location.href=\'/site/detail?id=' + ${s.id} + '\''"
+						 data-toggle="modal" data-target="#modal1v2">Detail
+						</button>
+					</div>
+				</div>
+			</div>
+
+
+
+
+		</div>
+
+	</div>
+
+	<footer class="container-fluid bg-dark mt-4" style="height: 200px;">
+
+	</footer>
+
+
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+	<script th:src="@{js/production.min.js}"></script>
+
+
+</body>
+</html>
